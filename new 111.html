@@ -1,0 +1,94 @@
+
+<!-- saved from url=(0040)file:///C:/Users/Au/Desktop/new%202.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>【战疫】数字通行证</title> 
+		<style>
+		div{ position:relative;}
+        p{font-size:80px;color:black;position:absolute;top:1065px;left:653px;}
+
+	    p1{font-size:120px;color:green;position:absolute;top:970px;left:600px;}
+		</style>
+        <script type="text/javascript">
+            function getDou() {
+			     <!-- var aa= null -->
+                <!-- if(number < 10) { -->
+                    <!-- return '0' + number; -->
+                <!-- } else { -->
+                    <!-- return number; -->
+                <!-- } -->
+				
+				aa = Math.random()*10000;
+				aa=Math.trunc(aa);
+                return aa;
+            }
+            bbb=getDou();
+   
+            window.onload = function() {
+                var oDate = document.getElementsByTagName("p1")[0];
+                var oTime = document.getElementsByTagName("p")[0];
+                     var a =99
+                function tick() {
+                    var date = new Date();
+                    var sDate = null;
+                    var sTime = null;
+			
+                    var hours = date.getHours();
+                    <!-- if(hours > 12) { -->
+                        <!-- hours %= 12; -->
+                        <!-- sTime = '下午 '; -->
+                    <!-- } else { -->
+                        <!-- sTime = '上午 '; -->
+                    <!-- } -->
+					sTime = '  ';
+                   
+					sTime+=a;
+					if(a==0){
+					a=90
+					}
+					a--;
+                   
+                    oTime.innerHTML = sTime;
+                   
+                    <!-- sDate = date.getUTCFullYear() ; -->
+                    sDate =bbb; 
+                    oDate.innerHTML = sDate;
+                }
+ 
+                setInterval(tick, 1000);
+                tick();
+            }
+        </script>
+        <style type="text/css">
+            body {
+                width: 800px;
+                height: 500px;
+               
+                vertical-align: middle;
+                display: table-cell;
+            }
+ 
+            .date {
+                text-align: center;
+                color: green;
+                font-size:120px;
+            }
+ 
+            .time {
+                text-align: center;
+                color: black;
+                font-size: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+		    <img id="tulip" src="./aaa2.jpg" alt="The Tulip">
+            <!-- <p class="date"> -->
+                <!-- 日期 -->
+            <!-- </p> -->
+            <p class="time">  61</p>
+			<p1 class="date">6061</p1>
+        </div>
+        
+
+</body></html>
