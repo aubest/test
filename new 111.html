@@ -14,13 +14,23 @@
             function getrandom(number) {
 			   if(number==4)
 			   {
-			     aa = Math.random()*10000;
-				aa=Math.trunc(aa);
-                return aa;
+			    a1 = Math.random()*10;
+				a1=Math.trunc(a1);
+				
+				a2 = Math.random()*10;
+				a2=Math.trunc(a2);
+				
+				a3 = Math.random()*10;
+				a3=Math.trunc(a3);
+				
+				a4 = Math.random()*10;
+				a4=Math.trunc(a4);
+                var sa = a1+''+a2+''+a3+''+a4;
+				return sa;
 			   }
 			   else
 			   {
-			       aa = Math.random()*10;
+			    aa = Math.random()*10;
 				aa=Math.trunc(aa);
                 return aa;
 			   }
